@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+
 """define a class node"""
+
 class Node:
+
     """Represent class node"""
     def __init__(self, data, next_node=None):
         """initialise the node"""
