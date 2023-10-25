@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-for i in range(97, 123):
-    print(chr(i), end = ' ')
+print(''.join(chr(97 + i) for i in range(26)), end='')
