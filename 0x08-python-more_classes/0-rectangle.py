@@ -2,4 +2,6 @@
 
 """Defining a class"""
 class Rectangle:
+    """Represent the class"""
     pass
+
