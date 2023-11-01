@@ -78,13 +78,10 @@ class Rectangle:
     def square(cls, size=0):
         """ returns a new Rectangle instance
         with width == height == size
-        """
 
-        new_rect = cls
-        new_rect.width = size
-        new_rect.height = size
-        
-        return (new_rect)
+        size being an int that is == to height and width
+        """
+        return (cls(size, size))
 
     def __str__(self):
         """ return the visual repesentation of the
