@@ -14,13 +14,7 @@ def is_kind_of_class(obj, a_class):
     object is an instance of a class that
     inherited from, the specified class; otherwise False
     """
-    curr_class = type(obj)
-    while curr_class is not object:
-        if curr_class is a_class:
-            return (True)
-        if hasattr(curr_class,'__base__'):
-            curr_class = curr_class.__base__
-        else:
-            object
+    if isinstance(obj, a_class):
+        return (True)
     return (False)
 
