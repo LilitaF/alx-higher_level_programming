@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 """Define class MyList """
+
+
 class MyList(list):
     """represent MyList class
 
@@ -13,4 +15,3 @@ class MyList(list):
         """
         list_sorted = sorted(self)
         print(list_sorted)
-

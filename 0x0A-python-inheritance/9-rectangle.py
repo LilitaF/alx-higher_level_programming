@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 
 """ Define class Rectangle that inherits frm BaseGeometry"""
+
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
 class Rectangle(BaseGeometry):
     """this class inherits, represent class"""
     def __init__(self, width, height):

@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 """Define function: is_same_class"""
+
+
 def is_same_class(obj, a_class):
     """True or False function
 
@@ -13,4 +15,3 @@ def is_same_class(obj, a_class):
     of the specified class; otherwise False.
     """
     return (type(obj) == a_class)
-
