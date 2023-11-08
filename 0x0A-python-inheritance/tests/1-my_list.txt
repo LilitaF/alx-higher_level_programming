@@ -1,0 +1,25 @@
+Test File for 1-my_list.py
+--------------------------
+
+In this module, a class "MyList" which inherites from "list"
+
+-----------------------------------------------------------
+
+MyList can be instantiated with a single argument, argument must be iteratable
+
+::
+
+	>>> MyList = __import__("1-my_list").MyList
+	>>> my_list = MyList([5, 6, 7 8])
+	>>> print(my_list)
+	[5, 6, 7, 8]
+
+::
+
+Strings can be included
+
+	>>> my_list = MyList([Sarah, Dave, Shin, April])
+	>>> print(my_list)
+	[Sarah, Dave, Shin, April]
+
+::
