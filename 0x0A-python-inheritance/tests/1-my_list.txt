@@ -5,21 +5,46 @@ In this module, a class "MyList" which inherites from "list"
 
 -----------------------------------------------------------
 
-MyList can be instantiated with a single argument, argument must be iteratable
+MyList can be instantiated with no arguments, which will return
+an empty list:
+
+	>>> MyList = __import__("1-my_list").MyList
+	>>> my_list = MyList()
+	>>> type(my_list)
+	<class '1-my_list.MyList'>
 
 ::
 
-	>>> MyList = __import__("1-my_list").MyList
-	>>> my_list = MyList([5, 6, 7 8])
+	>>> print(my_list)
+	[]
+
+MyList can be instantiated with a single argument, argument must be iteratable:
+
+::
+	>>> my_list = MyList([5, 6, 7, 8])
 	>>> print(my_list)
 	[5, 6, 7, 8]
 
-::
+Strings can be included:
 
-Strings can be included
+::
 
 	>>> my_list = MyList([Sarah, Dave, Shin, April])
 	>>> print(my_list)
 	[Sarah, Dave, Shin, April]
 
 ::
+
+	>>> my_list = MyList([None])
+	>>> print(my_list)
+	Traceback (most recent call last):
+	TypeError: 'NoneType' object is not iterable
+
+Using built-in method: .append
+
+::
+
+	>>> my_list = MyList([4, 5, 6])
+	>>> my_list.append(7)
+	>>> print(my_list)
+	[4, 5, 6, 7]
