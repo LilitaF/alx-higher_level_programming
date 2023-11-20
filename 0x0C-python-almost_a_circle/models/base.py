@@ -88,7 +88,7 @@ class Base:
         Args:
         - dictionary: key/ value iteams to initialise
         """
-         if dictionary and dictionary != {}:
+        if dictionary and dictionary != {}:
             if cls.__name__ == "Rectangle":
                 k_v = cls(1, 1)
             else:
