@@ -147,19 +147,17 @@ class Rectangle(Base):
             if len(args) >= 5:
                 self.__y = args[4]
         else:
-            pass
-
-        for k, v in kwargs.items():
-            if k == "id":
-                self.id = v
-            elif k == "width":
-                self.__width = v
-            elif k == "height":
-                self.__height = v
-            elif k == "x":
-                self.__x = v
-            elif k == "y":
-                self.__y = v
+            for k, v in kwargs.items():
+                if k == "id":
+                    self.id = v
+                elif k == "width":
+                    self.__width = v
+                elif k == "height":
+                    self.__height = v
+                elif k == "x":
+                    self.__x = v
+                elif k == "y":
+                    self.__y = v
 
     def to_dictionary(self):
         """returns the dictionary representation of a Rectangle"""
